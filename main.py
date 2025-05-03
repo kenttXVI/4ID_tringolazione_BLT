@@ -4,7 +4,7 @@ import sys
 import math # funzioni matematiche ( potenza, radice quadrata, ecc...)
 import socket # libreria generale per usare vari protocolli fra cui TCP e UDP, in questo programma la usiamo solo per prendere l'IP del pc su cui si sta eseguendoimport requests
 import subprocess # per eseguire comandi, intesi come comandi nel terminale
-import threading # per avviare e gestire thread ( se vi chiede se i thread in python esistono dite di NO e che sono solo simulati, anche se non penso lo chieda )
+import threading # per avviare e gestire thread
 import pyglet # per rendering grafico
 
 from bs4 import BeautifulSoup # per leggere il formato XML
@@ -65,7 +65,7 @@ def triangolazione(c1, c2, c3):
 
 def find_scanners(ip, mask = 24):
     # Usa nmap per trovare i raspberry connessi al nostro WiFi con il servizio
-    # bettercap online ( il servizio per trovare i dispositivi bluetooth )
+    # bettercap online
     # nmap -T4 -A -p {PORT} -oX - {IP}/{SUBNET}
 
     res = subprocess.Popen(
