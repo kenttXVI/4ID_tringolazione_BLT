@@ -66,4 +66,12 @@ Hypervisor (permette virtualizzazione)
    - Rilevare porte aperte
    - Mappare una rete, associando IP e MAC per ogni host
 ### Utilizzo nel codice:
-  - 
+  - Trova e traccia i dispostitivi che usano l'API REST reso disponibile da bettercup, ossia i RaspberryPi
+  - Genera risultati in formato .XML
+
+## Rendering grafico
+### Utilizzo radicale della libreria Pyglet:
+  - Disegna dei cerchi che rappresentano sostanzialemnte la posizione del dispsositivo trovato
+  - Finestra dove vengono rappresenatti i dati raccolti dai 3 RaspberryPi
+  - Ogni punto usa delle coordinate X,Y
+  - Mostra i MAC dei dispositivi trovati
