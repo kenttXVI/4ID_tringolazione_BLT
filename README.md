@@ -1,6 +1,6 @@
 # Approfondimenti
 
-## Sandbox -> Ambient virtuale isolato
+## Sandbox -> Ambiente virtuale isolato
 ### Usato per:
   - Emulano all' intrno della macchina corrente ciò che fanno le VM
   - Software testing
