@@ -25,6 +25,7 @@
    - Configurazione O.S. necessaria
    - I servizi vanno configurati
 ### Struttura Container:
+```
 (App)C1 <--|
 (App)C2 <--|
 (App)C3 <--|
@@ -36,8 +37,10 @@
          / \
           |
 Infrastruttura (macchina)
+```
 
 ### Struttura VM:
+```
 O.S. <-- VM1 <-----> VM2 --> O.S.
           |     |     |
          \ /    |    \ /
@@ -48,6 +51,7 @@ Hypervisor (permette virtualizzazione)
                 |
                 |
      Infrastruttura (macchina)
+```
            
 ## Bettercap -> Strumento/framework di sicurezza di rete (pen testing) scritto in Go
 ### Permette di:
