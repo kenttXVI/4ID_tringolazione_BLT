@@ -38,7 +38,7 @@
 Infrastruttura (macchina)
 
 ### Struttura VM:
-####O.S. <-- VM1 <-----> VM2 --> O.S.
+O.S. <-- VM1 <-----> VM2 --> O.S.
           |     |     |
          \ /    |    \ /
          APP1   |    APP1
@@ -55,4 +55,15 @@ Hypervisor (permette virtualizzazione)
   - Manipolare i dati
 ### Utilizzo nel codice:
   - Bettercap è utilizzato per raccogliere dati di tipo BLE, sfrutta la funzione get_ble_data() per raccogliere dai raspberry i dati dei dispositivi localizzati vicini
+  - Viene usato sulla porta 8081 (porta TCP), dove viene messo un servizio HTTP ossia un API REST
+  - I dati raccolti consistono in RSSI (potenza di segnale) rilevato dal RaspberryPi, di cui è stato fornito l'ip locale, e MAC Adress
+
+ ## Nmap -> Strumento di auditing e network exploration (network mapper)
+ ### Permette di:
+   - Analizzare dettagliatamente reti
+   - Tracciare eventi, azioni all'interno della rete
+   - Tracciare dati
+   - Rilevare porte aperte
+   - Mappare una rete, associando IP e MAC per ogni host
+### Utilizzo nel codice:
   - 
